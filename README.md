@@ -1,8 +1,9 @@
 # CaseCSV
 
 This project aims to simplify and automatize the conversion of case classes and
-heterogeneous lists from/to CSV by using the
-[shapeless](https://github.com/milessabin/shapeless).
+heterogeneous lists from/to CSV. CaseCSV is a small library based on
+[shapeless](https://github.com/milessabin/shapeless) and the idea is to keep
+it small and easy to integrate in other projects.
 To use it, import the `CSVConverter` and create one for your case class (or
 [HList](#hlist)):
 
