@@ -1,0 +1,8 @@
+   casecsv
+   Copyright 2015 Mario Pastorelli (pastorelli.mario@gmail.com
+
+   This product includes software developed at
+   Teralytics (http://www.teralytics.ch)
+
+   This project uses the shapeless library
+   (https://github.com/milessabin/shapeless)
