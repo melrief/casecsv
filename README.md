@@ -139,7 +139,7 @@ and that's it. We can then use `Foo` as field for our case class or hlist
 Right(MyData("foo", 1))
 ```
 
-More examples can be found in the [StringConverter Object](src/main/scala/casecsv/Read.scala).
+More examples can be found in the [StringConverter Object](src/main/scala/casecsv/StringConverter.scala).
 
 
 ## Contributing
