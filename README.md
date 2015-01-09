@@ -7,7 +7,7 @@ To use it, import the `CSVConverter` and create one for your case class (or
 [HList](#hlist)):
 
 ```scala
-import net.teralytics.casecsv.CSVConverter
+import casecsv.CSVConverter
 
 case class Person(name: String, age: Int)
 
@@ -122,7 +122,7 @@ case class Foo(i: Int)
 We add the `StringConverter` for it with
 
 ```scala
-import net.teralytics.casecsv.StringConverter
+import casecsv.StringConverter
 
 implicit def fooStringConverter = new StringConverter[Foo] {
   def from(s: String): Result[Foo] = tryOn(Foo(s.toInt))
@@ -134,12 +134,12 @@ and that's it. We can then use `Foo` as field for our case class or hlist
 
 ```scala
 > case class MyData(s: String, f: Foo)
-> import net.teralytics.casecsv.CSVConverter
+> import casecsv.CSVConverter
 > CSVConverter[MyData].from("foo,1")
 Right(MyData("foo", 1))
 ```
 
-More examples can be found in the [StringConverter Object](src/main/scala/net/teralytics/casecsv/Read.scala).
+More examples can be found in the [StringConverter Object](src/main/scala/casecsv/Read.scala).
 
 
 ## Contributing
